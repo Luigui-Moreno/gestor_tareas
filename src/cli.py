@@ -3,7 +3,13 @@ Módulo de interfaz de línea de comandos para el Gestor de Tareas (versión sin
 Contiene todas las funciones de interacción con el usuario.
 """
 
+import os
 import sys
+
+# Permite ejecutar este archivo directamente (python src/cli.py o botón ▶)
+if __package__ in (None, ""):
+    sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 from typing import List, Dict
 from src.tareas import (
     crear_tarea,
@@ -146,3 +152,9 @@ def confirmar_salida() -> bool:
     """
     respuesta = input("\n¿Estás seguro de que quieres salir? (s/n): ").lower()
     return respuesta in ['s', 'si', 'sí', 'y', 'yes']
+
+
+if __name__ == "__main__":
+    # Permite lanzar el gestor ejecutando cli.py directamente (botón ▶)
+    from src.main import main
+    main()

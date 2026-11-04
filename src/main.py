@@ -3,7 +3,13 @@ Punto de entrada principal del Gestor de Tareas CLI (versión sin POO).
 Orquesta la aplicación y maneja el flujo principal del programa.
 """
 
+import os
 import sys
+
+# Permite ejecutar este archivo directamente (python src/main.py o botón ▶)
+if __package__ in (None, ""):
+    sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 from src.storage import guardar_tareas, cargar_tareas
 from src.tareas import completar_tarea, eliminar_tarea
 
