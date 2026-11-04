@@ -1,5 +1,6 @@
 # Archivos de datos del proyecto
 tareas.json
+*.json
 
 # Python
 __pycache__/
