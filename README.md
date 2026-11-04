@@ -23,8 +23,8 @@ Una aplicación simple y eficaz para gestionar tus tareas diarias directamente d
 ### Clonar el repositorio
 
 ```bash
-git clone https://github.com/tu-usuario/mi-gestor-tareas.git
-cd mi-gestor-tareas
+git clone https://github.com/Luigui-Moreno/gestor_tareas.git
+cd gestor_tareas
 ```
 
 ### Ejecutar la aplicación
@@ -107,7 +107,7 @@ diccionarios, el módulo `json` y buenas prácticas de código (PEP 8).
 
 ## ✍️ Autor
 
-Tu Nombre
+Luigui Santiago Moreno Guerra
 
 ## 📄 Licencia
 
